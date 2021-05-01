@@ -18,20 +18,21 @@
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/8.png)
 * Withdraw amount validation with invalid account number
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/9.png)
-* Withdraw amount validation with negative amount
+* Withdraw amount validation with negative account number
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/10.png)
-* Withdraw amount with valid inputs
+* Withdraw amount validation with negative amount
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/11.png)
-* Get balance of account validation with invalid account number
+* Withdraw amount with valid inputs
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/12.png)
-* Get balance of account validation with negative account number
+* Get balance of account validation with invalid account number
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/13.png)
-* Get balance of account with valid inputs
+* Get balance of account validation with negative account number
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/14.png)
-* Displaying all the accounts read from file
+* Get balance of account with valid inputs
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/15.png)
-* Deposit amount to the accounts from file
+* Displaying all the accounts read from file
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/16.png)
+* Deposit amount to the accounts read from file
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/17.png)
 
 ### Screenshot of testing

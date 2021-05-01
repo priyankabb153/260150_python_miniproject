@@ -77,8 +77,8 @@ def fetch_phone_no():
 
 def read_accounts_from_file():
     file_size = os.path.getsize("bank_record")
-    x = check_file_present.check_file("bank_record")
-    if x is True:
+    output = check_file_present.check_file("bank_record")
+    if output is True:
         print("File is present")
     else:
         print("File not present")
@@ -88,15 +88,16 @@ def read_accounts_from_file():
         print("Create new accounts")
     else:
         list1 = []
-        file = open("bank_record", "r")
-        for line in file:
-            list1.clear()
-            for word in line.split():
-                list1.append(word)
-            my_list.create_account_from_file(int(list1[0]), list1[1], int(list1[2]),
-                                             list1[3], int(list1[4]), int(list1[5]))
-        print()
-        file.close()
+        #    file = open("bank_record", "r")
+        with open("bank_record", "r") as file:
+            for line in file:
+                list1.clear()
+                for word in line.split():
+                    list1.append(word)
+                my_list.create_account_from_file(int(list1[0]), list1[1], int(list1[2]),
+                                                 list1[3], int(list1[4]), int(list1[5]))
+            print()
+            file.close()
 
 
 class LinkedList:
@@ -111,7 +112,8 @@ class LinkedList:
         else:
             print("ACC_NO  NAME\t   AGE  ADDRESS \t PHONE_NO \t BALANCE")
             while cur is not None:
-                print(str(cur.acc_no) + "\t\t" + cur.name.replace("_", " ") + "   " + str(cur.age) + "   " +
+                print(str(cur.acc_no) + "\t\t" + cur.name.replace("_", " ") +
+                      "   " + str(cur.age) + "   " +
                       cur.address.replace("_", " ")
                       + " \t " + str(
                     cur.phone_no) + " \t " +
@@ -142,7 +144,8 @@ class LinkedList:
         print()
         print("The account number allocated is " + str(acc_num))
         print()
-        print("*********************************************************")
+        print("********************************"
+              "*************************")
 
     def create_account_from_file(self, acc_num, nme, years, addresses, ph_no, bal):
         new_node = Node(acc_num, nme, years, addresses, ph_no, bal)
@@ -203,7 +206,8 @@ class LinkedList:
 
         if amount <= first.balance:
             first.balance = first.balance - amount
-            print("Withdraw of " + str(amount) + " amount from account " + str(first.acc_no) + " successful!!!!!")
+            print("Withdraw of " + str(amount) + " amount from account "
+                  + str(first.acc_no) + " successful!!!!!")
             print()
             print()
             print("Remaining balance is " + str(first.balance) + " !!!!!!!!!!!")
@@ -240,22 +244,19 @@ class LinkedList:
             print("There is nothing to write to file")
 
         while cur is not None:
-            file.write(str(cur.acc_no) + "\t\t" + cur.name + "\t\t" + str(
-                cur.age) + "\t\t" + cur.address + "\t\t" + str(
-                cur.phone_no) + "\t\t" +
-                       str(cur.balance) + "\n")
+            file.write(str(cur.acc_no) + "\t\t" + cur.name + "\t\t" + str(cur.age) + "\t\t" + cur.address + "\t\t" + str(cur.phone_no) + "\t\t" + str(cur.balance) + "\n")
             cur = cur.next
 
 
 my_list = LinkedList()
 my_list.head = None
-flag = True
 with open("bank_record", "+a") as fp:
     fp.close()
 # check_file_present.check_file("bank_record")
-account_number = no_of_lines.no_of_lines('bank_record')
-if account_number != 0:
-    account_number += 1
+ACCOUNT_NUM = no_of_lines.no_of_lines('bank_record')
+# account_number = no_of_lines.no_of_lines('bank_record')
+if ACCOUNT_NUM != 0:
+    ACCOUNT_NUM += 1
 read_accounts_from_file()
 while True:
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~MENU~~~~~~~~~~~~~~~~~~~~~~~~~~")
@@ -264,25 +265,27 @@ while True:
     print("3. DEPOSIT AMOUNT ")
     print("4. WITHDRAW AMOUNT ")
     print("5. GET ACCOUNT BALANCE ")
-    print("6. Exit")
+    print("6. EXIT")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
     try:
         choice = int(input("Enter your Choice from options 1-6: "))
         if choice == 1:
-            if account_number == 0:
-                account_number = 1
-                acc_no = 1
+            if ACCOUNT_NUM == 0:
+                ACCOUNT_NUM = 1
+                ACC_NO = 1
+                # acc_no = 1
             else:
-                acc_no = account_number
+                ACC_NO = ACCOUNT_NUM
+            # acc_no = ACCOUNT_NUM
 
             name = fetch_name()
             age = fetch_age()
             address = fetch_address()
             phone_no = fetch_phone_no()
-            balance = 0
-            account_number = account_number + 1
-            my_list.create_account(acc_no, name, age, address, phone_no, balance)
+            BALANCE = 0
+            ACCOUNT_NUM = ACCOUNT_NUM + 1
+            my_list.create_account(ACC_NO, name, age, address, phone_no, BALANCE)
 
         elif choice == 2:
             my_list.display_all()

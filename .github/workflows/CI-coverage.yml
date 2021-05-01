@@ -27,4 +27,4 @@ jobs:
       run: pip install coverage
            pip install pytest
     - name: run coverage
-      run: coverage run -m pytest_main.py
+      run: coverage run -m pytest pytest_main.py

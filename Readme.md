@@ -33,21 +33,22 @@ These packages can be downloaded easily in pycharm as :
 
 1) Download the zip folder of the code and extract it.
 2) Install all the pre-requisites
-3) The main file is - bank.py - run this in the pycharm IDE
+3) The main file is bank.py -> run this file in the pycharm IDE
 
 => Press the run button to run the file OR 
 
-=> Type python bank.py in the pycharm command prompt
+=> Type python bank.py in the pycharm terminal
 
 ## Pytest
 
-Make sure that pytest is installed and in the pycharm IDE :
+Make sure that pytest is installed in the pycharm IDE :
 * Navigate to - Settings => Tools => Pycharm Integrated Tools => Default test runner => select pytest
 
-1) The files - check_file_present.py and no_of_lines.py are for pytest
-2) check_file_pytest.py is used to test if the files exist or not
+1) The files - check_file_present.py and no_of_lines.py contains functions for pytest
+2) check_file_present.py is used to test if the files exist or not
 3) no_of_lines.py is used to check the no of lines present in the file
-4) Run the functions separately in the pycharm IDE, by right-clicking on the test functions and run OR 
+4) Run the functions in pytest_main.py separately in the pycharm IDE, by right-clicking on the test functions and run
+   OR 
 
 => Enter command pytest pytest_main.py or pytest pytest_main.py -v
 

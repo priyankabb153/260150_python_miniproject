@@ -2,7 +2,7 @@
 
 * Menu
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/1.png)
-* Validations of Creating the account
+* Validations of name,age,address and phone no while Creating the account
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/2.png)
 * Creating new account with valid inputs
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Implementation%20and%20Testing%20Screen-shots/3.png)

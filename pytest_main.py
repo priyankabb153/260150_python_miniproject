@@ -44,3 +44,13 @@ def test_no_of_lines3():
         assert output2 > 0
     except FileNotFoundError:
         print("No such file or directory")
+
+
+def test_no_of_lines4():
+    try:
+        output2 = no_of_lines.no_of_lines('bank_record')
+        assert output2 < 0
+    except FileNotFoundError:
+        print("No such file or directory")
+    except AssertionError:
+        print("No of lines cannot be less than zero")

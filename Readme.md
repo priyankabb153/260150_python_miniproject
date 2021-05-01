@@ -16,5 +16,42 @@
   * Withdraw amount
   * Get account balance
 
+## Pre-requisites to run the files
+
+1) Python version - 3.9.4
+To download the latest version of python visit - https://www.python.org/downloads/
+
+2) Downloading required packages
+The packages used are:
+* pip - 21.1.1
+* regex - 2021.44
+* pytest - 6.2.3
+
+These packages can be downloaded easily in pycharm as : 
+* Settings => Project:your_project_name => Project Interpreter => + sign => Search for the packages you want to install
+
+## How to run the project in pycharm IDE
+
+1) Download the zip folder of the code and extract it.
+2) Install all the pre-requisites
+3) The main file is - bank.py - run this in the pycharm IDE
+
+=> Press the run button to run the file OR 
+
+=> Type python bank.py in the pycharm command prompt
+
+## Pytest
+
+Make sure that pytest is installed and in the pycharm IDE :
+* Navigate to - Settings => Tools => Pycharm Integrated Tools => Default test runner => select pytest
+
+1) The files - check_file_present.py and no_of_lines.py are for pytest
+2) check_file_pytest.py is used to test if the files exist or not
+3) no_of_lines.py is used to check the no of lines present in the file
+4) Run the functions separately in the pycharm IDE, by right-clicking on the test functions and run OR 
+
+=> Enter command pytest pytest_main.py or pytest pytest_main.py -v
+
+
 
 

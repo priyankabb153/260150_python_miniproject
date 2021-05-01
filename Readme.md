@@ -24,7 +24,6 @@ To download the latest version of python visit - https://www.python.org/download
 2) Downloading required packages
 The packages used are:
 * pip - 21.1.1
-* regex - 2021.44
 * pytest - 6.2.3
 
 These packages can be downloaded easily in pycharm as : 

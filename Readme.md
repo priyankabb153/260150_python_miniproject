@@ -42,7 +42,7 @@ These packages can be downloaded easily in pycharm as :
 ## Pytest
 
 Make sure that pytest is installed in the pycharm IDE :
-* To install => Navigate to - Settings => Tools => Pycharm Integrated Tools => Default test runner => select pytest
+* Navigate to - Settings => Tools => Pycharm Integrated Tools => Default test runner => select pytest
 * Make the required setting for pytest
 
 1) The files - check_file_present.py and no_of_lines.py contains functions for pytest

@@ -4,6 +4,11 @@
  #
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Images/banner.png)
 
+Codacy Analysis | Python Application/Pytest | Codacy 
+|---------|------------|-----------|
+|[![CI](https://github.com/priyankabb153/260150_python_miniproject/actions/workflows/codacy_analysis.yml/badge.svg)](https://github.com/priyankabb153/260150_python_miniproject/actions/workflows/codacy_analysis.yml)|[![Python application](https://github.com/priyankabb153/260150_python_miniproject/actions/workflows/python-app.yml/badge.svg)](https://github.com/priyankabb153/260150_python_miniproject/actions/workflows/python-app.yml) |[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0e30885e761248a994479d3e16d933fe)](https://www.codacy.com/gh/priyankabb153/260150_python_miniproject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=priyankabb153/260150_python_miniproject&amp;utm_campaign=Badge_Grade)
+
+
    
 ## Bank Management System Features
 ![screen](https://github.com/priyankabb153/260150_python_miniproject/blob/master/Images/system.png)
